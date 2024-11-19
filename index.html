@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Assassins' Creed</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Oswald:wght@500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Meta Tags for Responsiveness and SEO -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the The Assassins' Creed inspired by John Wick. Compete with friends, eliminate your targets, and become the last one standing.">
+    <meta name="keywords" content="Assassin Game, Multiplayer, John Wick, Strategy, Competition">
+    <meta name="author" content="Skywynne">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="The Assassins' Creed">
+    <meta property="og:description" content="Join the The Assassins' Creed inspired by John Wick. Compete with friends, eliminate your targets, and become the last one standing.">
+    <meta property="og:image" content="images/map.png">
+    <meta property="og:url" content="https://<your-username>.github.io/game-of-assassins/">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#killofday">Kill of the Day</a></li>
+            <li><a href="#leaderboard">Leaderboard</a></li>
+            <li><a href="#alive">Alive</a></li>
+            <li><a href="#eliminated">Eliminated</a></li>
+            <li><a href="#constitution">Constitution</a></li>
+            <li><a href="#map">Map</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section with Background Video -->
+    <header id="home">
+        <video autoplay muted loop id="bg-video">
+            <source src="videos/background.mp4" type="video/mp4">
+            <!-- Placeholder for background video -->
+        </video>
+        <div class="header-title">
+            <h1 style="background: url('images/assassins creed.png') no-repeat center; background-size: contain; padding: 20px;">The Assassins' Creed</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Kill of the Day Section -->
+        <section id="killofday" class="killofday-section">
+            <h2>Kill of the Day</h2>
+            <img src="images/topkill.png" alt="Kill of the Day" class="topkill-image" loading="lazy">
+            <p class="kill-description">
+                <strong>Assassin A</strong> eliminated <strong>Assassin B</strong> at the <em>Continental Grounds</em>.
+            </p>
+        </section>
+
+        <!-- Leaderboard Section -->
+        <section id="leaderboard" class="leaderboard-section">
+            <h2>Leaderboard</h2>
+            <div class="leaderboard-grid">
+                <!-- Leaderboard entries will be dynamically populated -->
+            </div>
+        </section>
+
+        <!-- Alive Players Section -->
+        <section id="alive" class="alive-section">
+            <h2>Alive Players</h2>
+            <div class="alive-grid">
+                <!-- Alive players will be dynamically populated -->
+            </div>
+        </section>
+
+        <!-- Eliminated Players Section -->
+        <section id="eliminated" class="eliminated-section">
+            <h2>Eliminated Players</h2>
+            <div class="eliminated-grid">
+                <!-- Eliminated players will be dynamically populated -->
+            </div>
+        </section>
+
+        <!-- Constitution Section -->
+        <section id="constitution" class="constitution-section">
+            <h2>Constitution</h2>
+            <p>
+                <!-- Constitution content will be inserted here by JavaScript -->
+            </p>
+            <h3>Game Rules and Regulations</h3>
+            <p>
+                <!-- Additional content if necessary -->
+            </p>
+        </section>
+
+        <!-- Map Section -->
+        <section id="map" class="map-section">
+            <h2>Map</h2>
+            <p>The green areas mark the continental grounds where assassination attempts cannot be made.</p>
+            <img src="images/map.png" alt="Continental Grounds Map" class="map-image" loading="lazy">
+        </section>
+
+        <!-- Kill Map Section (Removed from Menu) -->
+        <section id="killmap" class="killmap-section">
+            <h2>Kill Heat Map</h2>
+            <img src="images/heatmap.png" alt="Kill Heat Map" class="heatmap-image" loading="lazy">
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 The Assassins' Creed. All rights reserved by Skywynne.</p>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
