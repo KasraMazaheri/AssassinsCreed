@@ -26,7 +26,10 @@ const assassins = [
     { name: 'Holly', kills: 0, alive: true },
     { name: 'Adan', kills: 0, alive: true },
     { name: 'Fabiana', kills: 0, alive: true },
-    { name: 'Nour', kills: 0, alive: true }
+    { name: 'Shafick', kills: 0, alive: true },
+    { name: 'Nour', kills: 0, alive: true },
+    { name: 'Sanju', kills: 0, alive: true },
+    { name: 'Jad', kills: 0, alive: true }
 ];
 
 
@@ -35,7 +38,7 @@ function getAvatarByName(name) {
     if (name === 'Kasra') {
         return 'images/avatars/avatar1.png';
     }
-    
+
     const avatarOptions = [
         // 'images/avatars/avatar1.png',
         'images/avatars/avatar2.png',
