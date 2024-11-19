@@ -175,7 +175,7 @@ section img {
 
 .kill-description {
     font-size: 1.5em;
-    color: #ff6b6b;
+    color: var(--accent-color);
     max-width: 800px;
     margin: 0 auto;
 }

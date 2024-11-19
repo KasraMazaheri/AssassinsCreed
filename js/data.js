@@ -1,7 +1,7 @@
 // Initial List of Assassins
 const assassins = [
     { name: 'Kasra', kills: 0, alive: true },
-    { name: 'Arusha', kills: 0, alive: true },
+    { name: 'Arusha', kills: 0, alive: false },
     { name: 'Romina', kills: 0, alive: true },
     { name: 'Josh', kills: 0, alive: true },
     { name: 'Olya', kills: 0, alive: true },
@@ -18,9 +18,9 @@ const assassins = [
     { name: 'Artem', kills: 0, alive: true },
     { name: 'Dila', kills: 0, alive: true },
     { name: 'Paulo', kills: 0, alive: true },
-    { name: 'Fidan', kills: 0, alive: true },
+    { name: 'Fidan', kills: 0, alive: false },
     { name: 'Margarita', kills: 0, alive: true },
-    { name: 'Issa', kills: 0, alive: true },
+    { name: 'Issa', kills: 2, alive: true },
     { name: 'Jakob', kills: 0, alive: true },
     { name: 'Isabella', kills: 0, alive: true },
     { name: 'Holly', kills: 0, alive: true },
@@ -28,8 +28,11 @@ const assassins = [
     { name: 'Fabiana', kills: 0, alive: true },
     { name: 'Shafick', kills: 0, alive: true },
     { name: 'Nour', kills: 0, alive: true },
-    { name: 'Sanju', kills: 0, alive: true },
-    { name: 'Jad', kills: 0, alive: true }
+    { name: 'Sanju', kills: 0, alive: true },   
+    { name: 'Jad', kills: 0, alive: true },
+    { name: 'Mariana', kills: 0, alive: true },
+    { name: 'Firas', kills: 0, alive: true },
+    { name: 'Saed', kills: 1, alive: false }
 ];
 
 
@@ -57,10 +60,10 @@ function getAvatarByName(name) {
 // Configuration for Sections (Enabling/Disabling)
 const sectionConfig = {
     'home': true,
-    'killofday': false,
+    'killofday': true,
     'leaderboard': true,
     'alive': true,
-    'eliminated': false,
+    'eliminated': true,
     'constitution': true,
     'map': true,
     'killmap': false // This section is no longer in the menu

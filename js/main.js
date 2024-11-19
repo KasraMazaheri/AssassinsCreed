@@ -35,7 +35,7 @@ function renderLeaderboard() {
 
     // Sort assassins by kills in descending order and filter alive
     const sortedAssassins = assassins
-        .filter(assassin => assassin.alive)
+        // .filter(assassin => assassin.alive)
         .sort((a, b) => {
             if (a.name === 'Kasra') return -1;
             if (b.name === 'Kasra') return 1;
@@ -44,7 +44,7 @@ function renderLeaderboard() {
         .slice(0, 5);
 
     sortedAssassins.forEach(assassin => {
-        const playerCard = createPlayerCard(assassin, true);
+        const playerCard = createPlayerCard(assassin, true, !assassin.alive);
         leaderboardGrid.appendChild(playerCard);
     });
 }
