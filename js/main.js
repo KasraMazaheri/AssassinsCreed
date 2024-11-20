@@ -35,15 +35,25 @@ function renderLeaderboard() {
 
     // Sort assassins by kills in descending order and filter alive
     const sortedAssassins = assassins
-        // .filter(assassin => assassin.alive)
         .sort((a, b) => {
             if (a.name === 'Kasra') return -1;
             if (b.name === 'Kasra') return 1;
             return b.kills - a.kills;
-        })
-        .slice(0, 5);
+        });
 
-    sortedAssassins.forEach(assassin => {
+    const topAssassins = [];
+    let lastKills = null;
+
+    for (let i = 0; i < sortedAssassins.length; i++) {
+        if (i < 5 || sortedAssassins[i].kills === lastKills) {
+            topAssassins.push(sortedAssassins[i]);
+            lastKills = sortedAssassins[i].kills;
+        } else {
+            break;
+        }
+    }
+
+    topAssassins.forEach(assassin => {
         const playerCard = createPlayerCard(assassin, true, !assassin.alive);
         leaderboardGrid.appendChild(playerCard);
     });
