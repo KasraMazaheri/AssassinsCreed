@@ -1,12 +1,12 @@
 // Initial List of Assassins
 const assassins = [
-    { name: 'Kasra', kills: 0, alive: true },
+    { name: 'Kasra', kills: 1, alive: true },
     { name: 'Arusha', kills: 0, alive: false },
     { name: 'Romina', kills: 0, alive: true },
     { name: 'Josh', kills: 0, alive: true },
     { name: 'Olya', kills: 0, alive: true },
     { name: 'Ashley', kills: 0, alive: true },
-    { name: 'Ola', kills: 0, alive: true },
+    { name: 'Ola', kills: 0, alive: false },
     { name: 'Omar', kills: 0, alive: true },
     { name: 'Saad', kills: 0, alive: true },
     { name: 'Olivia', kills: 0, alive: true },
@@ -14,7 +14,7 @@ const assassins = [
     { name: 'Angeles', kills: 0, alive: true },
     { name: 'Pravi', kills: 0, alive: true },
     { name: 'Nevena', kills: 0, alive: true },
-    { name: 'Kizito', kills: 0, alive: true },
+    { name: 'Kizito', kills: 1, alive: true },
     { name: 'Artem', kills: 0, alive: true },
     { name: 'Dila', kills: 0, alive: true },
     { name: 'Paulo', kills: 0, alive: true },
@@ -25,14 +25,18 @@ const assassins = [
     { name: 'Isabella', kills: 0, alive: true },
     { name: 'Holly', kills: 0, alive: true },
     { name: 'Adan', kills: 0, alive: true },
-    { name: 'Fabiana', kills: 0, alive: true },
-    { name: 'Shafick', kills: 0, alive: true },
+    { name: 'Fabiana', kills: 1, alive: true },
+    { name: 'Shafick', kills: 0, alive: false },
     { name: 'Nour', kills: 0, alive: true },
     { name: 'Sanju', kills: 0, alive: true },   
     { name: 'Jad', kills: 0, alive: true },
     { name: 'Mariana', kills: 0, alive: true },
     { name: 'Firas', kills: 0, alive: true },
-    { name: 'Saed', kills: 1, alive: false }
+    { name: 'Saed', kills: 1, alive: false },
+    { name: 'Ning', kills: 0, alive: false },
+    { name: 'Nameer', kills: 1, alive: true },
+    { name: 'Adem', kills: 1, alive: true },
+    { name: 'Jennifer', kills: 0, alive: false }
 ];
 
 
