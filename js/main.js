@@ -139,7 +139,7 @@ function createPlayerCard(assassin, includeKills, isEliminated = false) {
     cardDiv.classList.add('player-card');
 
     const avatarImg = document.createElement('img');
-    avatarImg.src = 'images/players/' + assassin.file_name;
+    avatarImg.src = 'images/assassins/' + assassin.file_name;
     avatarImg.alt = assassin.name;
     if (isEliminated) {
         avatarImg.classList.add('eliminated-avatar');
