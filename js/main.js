@@ -36,8 +36,8 @@ function renderLeaderboard() {
     // Sort assassins by kills in descending order and filter alive
     const sortedAssassins = assassins
         .sort((a, b) => {
-            if (a.name === 'Kasra') return -1;
-            if (b.name === 'Kasra') return 1;
+            // if (a.name === 'Kasra') return -1;
+            // if (b.name === 'Kasra') return 1;
             return b.kills - a.kills;
         });
 
